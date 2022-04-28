@@ -20,8 +20,6 @@ function calculateHanoi(disksNumber, turnsSpeed) {
   return {turns: turns, seconds: Math.floor(turns / turnsBySecond)}
 }
 
-
-
 module.exports = {
   calculateHanoi
 };
