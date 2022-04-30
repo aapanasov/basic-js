@@ -27,7 +27,6 @@ function transform(arr) {
     if (!commands.includes(arr[i])) {
       transformed.push(arr[i])
       i++
-
       continue
     }
 
