@@ -17,16 +17,14 @@ function deleteDigit(n) {
   let maxDigits
   for (let i = 0; i < digits.length; i++) {
     const newDigits = [...digits.slice(0, i), ...digits.slice(i + 1, digits.length)]
-    const newMax = Number(newDigits.join(''))
+    const newMax = +newDigits.join('')
     if (newMax > max) {
       max = newMax
       maxDigits = newDigits
     }
   }
-  return Number(maxDigits.join(''))
+  return +maxDigits.join('')
 }
-
-console.log(deleteDigit(342))
 
 module.exports = {
   deleteDigit
